@@ -22,8 +22,8 @@ plot1 <- function() {
                          Sub_metering_3=raw_data$Sub_metering_3)
   # Run the plot1
   png(filename="plot1.png", width=480, height=480, units="px")
-  hist(all_data$Global_active_power, col="azure", 
+  hist(all_data$Global_active_power, col="red", 
        main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency")
-  z<-dev.off()
+  clear_z<-dev.off()
 }
 
